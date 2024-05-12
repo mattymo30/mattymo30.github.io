@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a:visited, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header { 
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+
+.header a.name{
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+.header-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+.head-section {
+  text-align: center;
+}
+
+.link-button {
+  width:42px;
+  height:42px;
+
+}

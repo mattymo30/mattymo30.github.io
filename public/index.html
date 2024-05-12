@@ -24,20 +24,42 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Home - Matthew Morrison</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="header">
+      <a href="#default" class="name">Matthew Morrison</a>
+      <div class="header-right">
+        <a>About</a>
+        <a>Experience</a>
+        <a>Contact</a>
+      </div>
+    </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="head-section">
+      <h1>Matthew Morrison</h1>
+      <div class="social-links">
+        <a href="https://github.com/mattymo30">
+        <img class="link-button" src="%PUBLIC_URL%/images/github_icon.png">
+        </a>
+        <a href="https://www.linkedin.com/in/matthewsmorrison30/">
+        <img class="link-button" src="%PUBLIC_URL%/images/linkedin_icon.png">
+        </a>
+        <a href="mailto:msm8275@rit.edu">
+        <img class="link-button" src="%PUBLIC_URL%/images/email_icon.png">
+        </a>
+      </div>
+      <div class="resume-link">
+        <a href="%PUBLIC_URL%/docs/Morrison_Matthew_Resume_CS.pdf">
+          <button class="resume-button">Check Out My Resume</button>
+        </a>
+      </div>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="about-intro">
+      <h1>About Me</h1>
+
+      <button class = "lm-button">Learn More</button>
   </body>
 </html>
