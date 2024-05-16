@@ -47,10 +47,19 @@ a:visited, a:link {
 
 .head-section {
   text-align: center;
+  background-color: #ddd;
 }
 
 .link-button {
   width:42px;
   height:42px;
 
+}
+
+.about-intro {
+  text-align: center;
+}
+
+.about-p {
+  text-align: center;
 }
