@@ -1,11 +1,7 @@
-import { useEffect } from 'react';
 import './App.css';
 
 function App() {
   return (
-    useEffect(() => {
-      document.title = "Matthew Morrison - Home"
-    }, []),
     <div className="HeadTitle">
       <center>
       <h1>Matthew Morrison</h1>

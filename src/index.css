@@ -34,8 +34,6 @@ a:visited, a:link {
   text-decoration: none;
 }
 
-
-
 .header-right a:hover {
   background-color: #ddd;
   color: black;
@@ -47,7 +45,6 @@ a:visited, a:link {
 
 .head-section {
   text-align: center;
-  background-color: #ddd;
 }
 
 .link-button {
@@ -56,10 +53,47 @@ a:visited, a:link {
 
 }
 
+.resume-button {
+  background: lightblue;
+  border-radius: 25px;
+  color: black;
+  max-width: 500px;
+  transition-duration: 0.5s;
+  padding: 25px 100px;
+  font-size: larger;
+}
+
+.resume-button:hover {
+  background-color: #ddd;
+}
+
 .about-intro {
   text-align: center;
+  padding: 20px;
 }
 
 .about-p {
   text-align: center;
+  border-radius: 25px;
+  border: 2px solid lightblue;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  max-width: 750px;
+}
+
+.about-p h3 {
+  text-shadow: 2px 2px 2px gray;
+}
+
+.about-p p {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.about-p:hover {
+  background-color: #ddd;
+  transition-duration: 0.5s;
+  color: black;
 }
