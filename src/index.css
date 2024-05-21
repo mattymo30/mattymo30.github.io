@@ -47,10 +47,16 @@ a:visited, a:link {
   text-align: center;
 }
 
-.link-button {
-  width:42px;
-  height:42px;
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.link-button {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
 }
 
 .resume-button {
@@ -96,4 +102,52 @@ a:visited, a:link {
   background-color: #ddd;
   transition-duration: 0.5s;
   color: black;
+}
+
+.lm-button {
+  background: lightblue;
+  border-radius: 25px;
+  color: black;
+  max-width: 500px;
+  transition-duration: 0.5s;
+  padding: 25px 100px;
+  font-size: larger;
+}
+
+.lm-button:hover {
+  background-color: #ddd;
+}
+
+.pc-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.projects-b {
+  background: lightblue;
+  border-radius: 25px;
+  color: black;
+  width: 400px;
+  height: 50px;
+  transition-duration: 0.5s;
+  font-size: larger;
+}
+
+.projects-b:hover {
+  background-color: #ddd;
+}
+
+.contact-b {
+  background: lightblue;
+  border-radius: 25px;
+  color: black;
+  width: 400px;
+  height: 50px;
+  transition-duration: 0.5s;
+  font-size: larger;
+}
+
+.contact-b:hover {
+  background-color: #ddd;
 }

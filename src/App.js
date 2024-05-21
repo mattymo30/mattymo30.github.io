@@ -1,17 +1,19 @@
+import React from 'react';
 import './App.css';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Contact from './pages/contact';
+import Projects from './pages/projects';
 
 function App() {
   return (
-    <div className="HeadTitle">
-      <center>
-      <h1>Matthew Morrison</h1>
-      <div className="ButtonLinks">
-        <a class="link-button" href="https://github.com/mattymo30">Github</a>
-        <a class="link-button" href="https://www.linkedin.com/in/matthewsmorrison30/">LinkedIn</a>
-        <a class="link-button" href="mailto:msm8275@rit.edu">Email</a>
-      </div>
-      </center>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/experience" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
