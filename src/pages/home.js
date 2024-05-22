@@ -11,12 +11,6 @@ const Home = () => {
         <div>
                 <section id="colorlib-hero" class="js-fullheight" data-section="home">
                 <noscript>You need to enable JavaScript to run this app.</noscript>
-                <div className="header">
-                    <a href="#default" className="name">Matthew Morrison</a>
-                    <div className="header-right">
-                        <Link to="/contact">Contact</Link>
-                    </div>
-                </div>
 
                 <div className="head-section">
                     <h1>Matthew Morrison</h1>

@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: lightblue;
+}
+
+
+.navbar-left {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-right a {
+    height: 100%;
+    font-size: 20px;
+    margin: 0px 10px;
+    padding-left: 20px;
+}
+
+.navbar-right a:not(:first-child) {
+    border-left: 1px solid black;
+}
+
+
