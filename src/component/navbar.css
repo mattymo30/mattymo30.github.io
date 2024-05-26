@@ -1,27 +1,48 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #324680;
+    color: #eaecf2;
     align-items: center;
-    padding: 20px 10px;
-    background-color: lightblue;
+    align-self: center;
 }
+
 
 
 .navbar-left {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-right a {
-    height: 100%;
     font-size: 20px;
     margin: 0px 10px;
-    padding-left: 20px;
+    transition-duration: 0.4s;
+    text-decoration: none;
 }
 
-.navbar-right a:not(:first-child) {
-    border-left: 1px solid black;
+
+.navbar-right a:hover {
+    color: #c1c7d8;
 }
 
+
+.link-active {
+    pointer-events: none;
+}
 

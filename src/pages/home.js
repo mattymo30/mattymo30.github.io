@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -13,20 +12,24 @@ const Home = () => {
                 <noscript>You need to enable JavaScript to run this app.</noscript>
 
                 <div className="head-section">
-                    <h1>Matthew Morrison</h1>
-                    <div className="social-links">
-                        <a href="https://www.linkedin.com/in/matthewsmorrison30/">
-                            <img className="link-button" src={`${process.env.PUBLIC_URL}/images/linkedin_icon.png`} alt="Linkedin Logo"/>
+                    <div className="head-section-left">
+                        <h1>Matthew Morrison</h1>
+                        <div className="social-links">
+                            <a href="https://www.linkedin.com/in/matthewsmorrison30/">
+                                <img className="link-button" src={`${process.env.PUBLIC_URL}/images/linkedin_icon.png`} alt="Linkedin Logo"/>
+                            </a>
+                            <a href="https://github.com/mattymo30">
+                                <img className="link-button" src={`${process.env.PUBLIC_URL}/images/github_icon.png`} alt="GitHub Logo"/>
+                            </a>
+                        </div>
+                        <div className="resume-link">
+                        <a href="%PUBLIC_URL%/docs/Morrison_Matthew_Resume_CS.pdf" target="_blank">
+                            <button className="resume-button">Check Out My Resume</button>
                         </a>
-                        <a href="https://github.com/mattymo30">
-                            <img className="link-button" src={`${process.env.PUBLIC_URL}/images/github_icon.png`} alt="GitHub Logo"/>
-                        </a>
-
+                        </div>
                     </div>
-                    <div className="resume-link">
-                    <a href="%PUBLIC_URL%/docs/Morrison_Matthew_Resume_CS.pdf" target="_blank">
-                        <button className="resume-button">Check Out My Resume</button>
-                    </a>
+                    <div className="head-section-right">
+                        <img className="headhsot-img" src={`${process.env.PUBLIC_URL}/images/me-hockey.png`} alt="Linkedin Logo"/>
                     </div>
                 </div>
 

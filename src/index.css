@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eaecf2;
 }
 
 code {
@@ -44,7 +45,22 @@ a:visited, a:link {
 }
 
 .head-section {
+  display: flex;
+  align-items: center;
   text-align: center;
+  justify-content: center;
+  padding: 30px 30px;
+}
+
+.head-section-right img {
+  max-width: 261px;
+  max-height: 346.5px;
+  height: auto\9;
+  width: auto\9;
+}
+
+.head-section-right {
+  margin-left: 50px;
 }
 
 .social-links {
