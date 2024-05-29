@@ -26,6 +26,7 @@ const ContactForm = () => {
 
     return (
         <div className="cf-section">
+            <h3>Contact Form</h3>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor='name'>Name:*</label>

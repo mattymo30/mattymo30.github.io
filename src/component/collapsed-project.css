@@ -1,0 +1,18 @@
+.project-element {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-details {
+    height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-out, opacity 0.4s ease-out;
+  opacity: 0;
+}
+
+.project-details.expanded {
+    height: auto;
+  transition: height 0.4s ease-in, opacity 0.4s ease-in;
+  opacity: 1;
+  }

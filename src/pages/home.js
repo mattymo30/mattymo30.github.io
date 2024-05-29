@@ -23,7 +23,7 @@ const Home = () => {
                             </a>
                         </div>
                         <div className="resume-link">
-                        <a href="%PUBLIC_URL%/docs/Morrison_Matthew_Resume_CS.pdf" target="_blank">
+                        <a href={`${process.env.PUBLIC_URL}/docs/Morrison_Matthew_Resume_CS.pdf`}>
                             <button className="resume-button">Check Out My Resume</button>
                         </a>
                         </div>
