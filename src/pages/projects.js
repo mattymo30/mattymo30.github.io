@@ -15,7 +15,7 @@ const work_experience = [
     {
         title: "Website Designer | Our Stonehenge LLC",
         date: "From June 2020 - November 2023",
-        details: "Add details about this project!"
+        details: `This was part of my family business. I helped to design and build up the business website using the WIX interface.`
     },
     {
         title: "Package Handler | United Parcel Service",
@@ -29,15 +29,17 @@ const curr_projects = [
     {
         title: "Personal Portfolio Website",
         details: "Add details about this project!",
+        link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/mattymo30.github.io"
     },
 ];
 
 const professional_projects = [
     {
-        title: "SBOM-In-a-Box/SBOM-Plugfest",
+        title: "SBOM-in-a-Box/SBOM-Plugfest",
         details: "Add details about this project!",
-        link: "https://github.com/SoftwareDesignLab/SBOM-Plugfest"
+        link_info: "GitHub Repository",
+        link: "https://github.com/SoftwareDesignLab/SBOM-in-a-Box"
     },
 ];
 
@@ -45,6 +47,7 @@ const academic_projects = [
     {
         title: "Implementation of Crytography Concepts in Linear Algebra",
         details: "Add details about this project!",
+        link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/MATH-241-Honors-P"
     },
     {
@@ -54,6 +57,7 @@ const academic_projects = [
     {
         title: "Implementation of Computer Science Theory Mathematical Results",
         details: "Add details about this project!",
+        link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/cs-theory-project"
     }
 ];
@@ -62,21 +66,25 @@ const personal_projects = [
     {
         title: "Password Bank",
         details: "Add details about this project!",
+        link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/password-bank"
     },
     {
         title: "Keylogger",
         details: "Add details about this project!",
+        link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/Keylogger"
     },
     {
         title: "Instagram Quote Bot",
         details: "Add details about this project!",
+        link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/instagram-quote-bot"
     },
     {
         title: "Address Book",
         details: "Add details about this project!",
+        link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/address-book"
     },
 ]
@@ -94,7 +102,7 @@ const Projects = () => {
             <h2>Work Experience</h2>
                 <div>
                     {work_experience.map((work, index) => (
-                        <CollapsedProject key={index} title={work.title} date={work.date} details={work.details} link={work.link}/>
+                        <CollapsedProject key={index} title={work.title} date={work.date} details={work.details} link_info={work.link_info} link={work.link}/>
                     
                     ))}
                 </div>
@@ -102,7 +110,7 @@ const Projects = () => {
             <h2>Projects In Progress</h2>
                 <div>
                     {curr_projects.map((proj, index) => (
-                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link={proj.link}/>
+                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link_info={proj.link_info} link={proj.link}/>
                     
                     ))}
                 </div>
@@ -110,21 +118,21 @@ const Projects = () => {
             <h2>Projects Completed - Professional</h2>
                 <div>
                     {professional_projects.map((proj, index) => (
-                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link={proj.link}/>
+                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link_info={proj.link_info} link={proj.link}/>
                     
                     ))}
                 </div>
             <h2>Projects Completed - Academic</h2>
                 <div>
                     {academic_projects.map((proj, index) => (
-                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link={proj.link}/>
+                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link_info={proj.link_info} link={proj.link}/>
                     
                     ))}
                 </div>
             <h2>Projects Completed - Personal</h2>
                 <div>
                     {personal_projects.map((proj, index) => (
-                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link={proj.link}/>
+                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link_info={proj.link_info} link={proj.link}/>
                     
                     ))}
                 </div>

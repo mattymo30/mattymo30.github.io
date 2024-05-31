@@ -14,22 +14,23 @@ const Home = () => {
                 <div className="head-section">
                     <div className="head-section-left">
                         <h1>Matthew Morrison</h1>
-                        <div className="social-links">
-                            <a href="https://www.linkedin.com/in/matthewsmorrison30/">
-                                <img className="link-button" src={`${process.env.PUBLIC_URL}/images/linkedin_icon.png`} alt="Linkedin Logo"/>
-                            </a>
-                            <a href="https://github.com/mattymo30">
-                                <img className="link-button" src={`${process.env.PUBLIC_URL}/images/github_icon.png`} alt="GitHub Logo"/>
-                            </a>
+                        <div className='social-links'>
+                            <div className="social-link">
+                                <a href="https://www.linkedin.com/in/matthewsmorrison30/">
+                                    Linkedin
+                                </a>
+                            </div>
+                            <div className='social-link'>
+                                <a href="https://github.com/mattymo30">
+                                    GitHub
+                                </a>
+                            </div>
                         </div>
                         <div className="resume-link">
                         <a href={`${process.env.PUBLIC_URL}/docs/Morrison_Matthew_Resume_CS.pdf`}>
                             <button className="resume-button">Check Out My Resume</button>
                         </a>
                         </div>
-                    </div>
-                    <div className="head-section-right">
-                        <img className="headhsot-img" src={`${process.env.PUBLIC_URL}/images/me-hockey.png`} alt="Linkedin Logo"/>
                     </div>
                 </div>
 
