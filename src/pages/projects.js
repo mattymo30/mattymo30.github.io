@@ -15,12 +15,17 @@ const work_experience = [
     {
         title: "Website Designer | Our Stonehenge LLC",
         date: "From June 2020 - November 2023",
-        details: `This was part of my family business. I helped to design and build up the business website using the WIX interface.`
+        details: `This was part of my family business. 
+        I helped to design and build up the business website using the WIX interface.
+        This included conceptualizing, planning, and building the website.
+        I also helped to maintain the site as edits or updates were necessary.`
     },
     {
         title: "Package Handler | United Parcel Service",
         date: "From May 2022 - July 2022",
-        details: "Add details about this project!"
+        details: `This was my part-time position before my first semester at RIT.
+        I helped to ensure that packages were not damaged, misplaced, or lost in a timely manner to their respective destination.
+        On average, I help to successfully handle 500+ packages nightly.`
     },
 
 ];
@@ -28,7 +33,8 @@ const work_experience = [
 const curr_projects = [
     {
         title: "Personal Portfolio Website",
-        details: "Add details about this project!",
+        details: `This is the current website you're looking at! 
+        I am learning React.js and how to build up a user-friendly website to help display my projects and experiences to the public.`,
         link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/mattymo30.github.io"
     },
@@ -37,7 +43,10 @@ const curr_projects = [
 const professional_projects = [
     {
         title: "SBOM-in-a-Box/SBOM-Plugfest",
-        details: "Add details about this project!",
+        details: `This was the main project I contributed to during my internship at the RIT Cybersecurity Institute.
+        This project's goal is to help generate  Software Bill of Materials (SBOM) and Vulnerability Exploitability eXchange (VEX) documents.
+        The project is also capable of grading SBOM using a series of metric tests, compare SBOM documents, and merge SBOMs into a single unified document.
+         mainly focused on the SBOM metrics and VEX generation.`,
         link_info: "GitHub Repository",
         link: "https://github.com/SoftwareDesignLab/SBOM-in-a-Box"
     },
@@ -46,17 +55,34 @@ const professional_projects = [
 const academic_projects = [
     {
         title: "Implementation of Crytography Concepts in Linear Algebra",
-        details: "Add details about this project!",
+        details: `This project was the second honors option I have implemented. This served as an introduction to C++ and to cryptography concepts that involved linear algebra or number theory concepts. I wanted to challenge myself by learning a new programming language with this project, and I ultimately decided to utilize C++ due to its applications in real-world software.\n
+
+        I implemented three parts to this project in C++:\n
+        RSA,
+        Hill Cipher,
+        Elliptic Curve Cryptography (ECC).
+        I also presented my project and what I learned to my linear algebra class. This helped to demonstrate my understanding of the number theory and cryptography concepts my professor taught me and discussed with me during the semester.`,
         link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/MATH-241-Honors-P"
     },
     {
+        title: "Movie Database Project",
+        details: `This was a semester-long project involving my Principles of Data Management course. My group had to develop a database using PostgreSQL of a basic movie database, similar to Netflix or Hulu, to showcase our understanding of databases and finding data analytics. We presented to our professor a Python project that allowed users to perform actions such as watch movies, create collections of movies, and search based on contributors and other factors.`,
+        link_info: "GitHub Repository",
+        link: "https://github.com/mattymo30/CSCI-320-36"
+    },
+    {
         title: "E-Store: Shake and Pour",
-        details: "Add details about this project!"
+        details: `This was a semester-long project involving my Intro to Software Engineering course.
+        My group and I had to create an e-store application utilizing Angular.js and Java Boot Strap on the back end.
+        This project taught us how to work in an Agile environment, utilizing a scrum process to complete the project in the semester's time.`
     },
     {
         title: "Implementation of Computer Science Theory Mathematical Results",
-        details: "Add details about this project!",
+        details: `This was the first honors project I completed as part of my requirements in the honors college.
+        I developed a Python program that highlighted principle and results that was learned throughout the Intro to Computer Science Theory course.
+        This included results from automata theory, formal languages, and computability. 
+        By visualizing these complex mathematical results learned, it helped to deepen my understanding of the theoretical conepts behind Computer Science.`,
         link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/cs-theory-project"
     }
@@ -65,25 +91,22 @@ const academic_projects = [
 const personal_projects = [
     {
         title: "Password Bank",
-        details: "Add details about this project!",
+        details: `This was one of my first personal projects. 
+        I constructed a program using Python's Tkinter package to be able to hold multiple users' login information within binary files.
+        These were encrypted using Pyca cryptography's symmetric encryption recipe.`,
         link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/password-bank"
     },
     {
-        title: "Keylogger",
-        details: "Add details about this project!",
-        link_info: "GitHub Repository",
-        link: "https://github.com/mattymo30/Keylogger"
-    },
-    {
         title: "Instagram Quote Bot",
-        details: "Add details about this project!",
+        details: `Simple program that utilizes a site that generates a quote every day.
+        This would take the quote generated and turn it into a simple image that can be posted on Instagram, given that you provide credentials to an account.`,
         link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/instagram-quote-bot"
     },
     {
         title: "Address Book",
-        details: "Add details about this project!",
+        details: "Utilizing the Tkinter package. I constructed an address book that can hold different people's information, such as contact information and addresses.",
         link_info: "GitHub Repository",
         link: "https://github.com/mattymo30/address-book"
     },
