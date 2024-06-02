@@ -5,3 +5,30 @@
 h2 {
     text-decoration: underline;
 }
+
+.explanation {
+    font-size: large;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.exp-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.show-all-button {
+    background: lightblue;
+    border-radius: 10px;
+    font-size: medium;
+    transition: 0.3s;
+    padding: 10px 20px;
+}
+
+.show-all-button:hover {
+    background-color: #ddd;
+}

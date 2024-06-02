@@ -52,17 +52,6 @@ a:visited, a:link {
   padding: 30px 30px;
 }
 
-.head-section-right img {
-  max-width: 261px;
-  max-height: 346.5px;
-  height: auto\9;
-  width: auto\9;
-}
-
-.head-section-right {
-  margin-left: 50px;
-}
-
 .social-links {
   display: flex;
   justify-content: space-evenly;
@@ -107,10 +96,6 @@ a:visited, a:link {
   padding-bottom: 20px;
   margin-bottom: 30px;
   max-width: 750px;
-}
-
-.about-p h3 {
-  text-shadow: 2px 2px 2px gray;
 }
 
 .about-p p {

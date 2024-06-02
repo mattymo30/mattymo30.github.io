@@ -2,9 +2,12 @@
     align-items: center;
     text-align: center;
     margin-bottom: 1rem;
+    display: inline-block;
+    position: relative;
     overflow: hidden;
     transition: all 1s ease-in-out, opacity 1s ease-out;
     max-height: 50px;
+    font-size: large;
 }
 
 .project-details {
@@ -18,7 +21,34 @@
 
 .title {
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+  font-weight: 500;
+}
+
+.title:after {
+  content: '»';
+  font-size: 36px;
+  position: absolute;
+  opacity: 0;  
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+  transition: 0.5s;
+}
+
+.title:hover{
+  padding-right: 40px;
+  padding-left: 8px;
+}
+
+.title:hover:after {
+  opacity: 1;
+  top: 8px;
+  right: 10px;
 }
 
 .p-title {
@@ -29,14 +59,18 @@
 .link-button {
   background: lightblue;
   color: black;
-  font-weight: bold;
-  transition-duration: 0.5s;
+  border-radius: 10px;
+  transition-duration: 0.3s;
   text-align: center;
   text-decoration: none;
   padding: 10px 10px;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: medium;
+}
+
+.link-button:hover {
+  background-color: #ddd;
 }
 
 .link-button:hover {
@@ -44,10 +78,16 @@
 }
 
 .close-button {
-  border: none;
-  padding: 5px 10px;
+  background: lightblue;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px 15px;
   cursor: pointer;
   text-decoration: none;
   margin-top: 20px;
-  transition: 0.4s;
+  transition: 0.3s;
+}
+
+.close-button:hover {
+  background-color: #ddd;
 }

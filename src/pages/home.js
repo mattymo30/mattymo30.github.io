@@ -1,11 +1,19 @@
 import React, {useEffect} from 'react';
-
+import {NavLink} from 'react-router-dom';
 
 const Home = () => {
     useEffect(() => {
         document.title = "Home - Matthew Morrison";
 
     }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
     return (
         <div>
                 <section id="colorlib-hero" class="js-fullheight" data-section="home">
@@ -27,7 +35,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="resume-link">
-                        <a href={`${process.env.PUBLIC_URL}/docs/Morrison_Matthew_Resume_CS.pdf`}>
+                        <a href={`${process.env.PUBLIC_URL}/docs/Morrison_Matthew_Resume_CS_6.0.pdf`}>
                             <button className="resume-button">Check Out My Resume</button>
                         </a>
                         </div>
@@ -75,8 +83,12 @@ const Home = () => {
                 </div>
 
                 <div className="pc-container">
-                    <button className="projects-b">Check Out Some Projects I've Worked On!</button>
-                    <button className="contact-b">Interested In Reaching Out?</button>
+                    <NavLink exact to="/experience">
+                        <button className="projects-b" onClick={scrollToTop}>Check Out Some Projects I've Worked On!</button>
+                    </NavLink>
+                    <NavLink exact to ="/contact">
+                        <button className="contact-b" onClick={scrollToTop}>Interested In Reaching Out?</button>
+                    </NavLink>
                 </div>
                 </section>
 

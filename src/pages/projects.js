@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import CollapsedProject from '../component/CollapsedProject';
 import './projects.css';
 
@@ -114,51 +114,87 @@ const personal_projects = [
 
 
 const Projects = () => {
+
+    const [showAllWorkExperience, setShowAllWorkExperience] = useState(false);
+    const [showAllCurrProjects, setShowAllCurrProjects] = useState(false);
+    const [showAllProfessionalProjects, setShowAllProfessionalProjects] = useState(false);
+    const [showAllAcademicProjects, setShowAllAcademicProjects] = useState(false);
+    const [showAllPersonalProjects, setShowAllPersonalProjects] = useState(false);
+
     useEffect(() => {
         document.title = "Experience - Matthew Morrison";
 
     }, []);
+
+    const renderProjects = (projects, showAll) => {
+        return projects.slice(0, showAll ? projects.length : 3).map((proj, index) => (
+            <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link_info={proj.link_info} link={proj.link} />
+        ));
+    }
+
     return (
         <div>
             <h1>Personal And Professional Experience</h1>
 
+            <div className='explanation'>
+                <p>This is a collection of all my work experience and project I've worked on, ranging from professional, academic, and personal projects. Click on each experience to learn more about it!</p>
+            </div>
+
             <h2>Work Experience</h2>
-                <div>
-                    {work_experience.map((work, index) => (
-                        <CollapsedProject key={index} title={work.title} date={work.date} details={work.details} link_info={work.link_info} link={work.link}/>
-                    
-                    ))}
-                </div>
+            <div className='exp-container'>
+                {renderProjects(work_experience, showAllWorkExperience)}
+                {!showAllWorkExperience && work_experience.length > 3 && (
+                    <button className='show-all-button' onClick={() => setShowAllWorkExperience(true)}>Show All Work Experience</button>
+                )}
+                {showAllWorkExperience && (
+                    <button className='show-all-button' onClick={() => setShowAllWorkExperience(false)}>Show Less Work Experience</button>
+                )}
+            </div>
 
             <h2>Projects In Progress</h2>
-                <div>
-                    {curr_projects.map((proj, index) => (
-                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link_info={proj.link_info} link={proj.link}/>
-                    
-                    ))}
-                </div>
+            <div className='exp-container'>
+                {renderProjects(curr_projects, showAllCurrProjects)}
+                {!showAllCurrProjects && curr_projects.length > 3 && (
+                    <button className='show-all-button' onClick={() => setShowAllCurrProjects(true)}>Show All Current Projects</button>
+                )}
+                {showAllCurrProjects && (
+                    <button className='show-all-button' onClick={() => setShowAllCurrProjects(false)}>Show Less Current Projects</button>
+                )}
+            </div>
             
             <h2>Projects Completed - Professional</h2>
-                <div>
-                    {professional_projects.map((proj, index) => (
-                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link_info={proj.link_info} link={proj.link}/>
-                    
-                    ))}
-                </div>
+            <div className='exp-container'> 
+                {renderProjects(professional_projects, showAllProfessionalProjects)}
+                {!showAllProfessionalProjects && professional_projects.length > 3 && (
+                    <button className='show-all-button' onClick={() => setShowAllProfessionalProjects(true)}>Show All Professional Projects</button>
+                )}
+                {showAllProfessionalProjects && (
+                    <button className='show-all-button' onClick={() => setShowAllProfessionalProjects(false)}>Show Less Professional Projects</button>
+                )}
+            </div>
+
             <h2>Projects Completed - Academic</h2>
-                <div>
-                    {academic_projects.map((proj, index) => (
-                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link_info={proj.link_info} link={proj.link}/>
-                    
-                    ))}
-                </div>
+            <div className='exp-container'>
+                {renderProjects(academic_projects, showAllAcademicProjects)}
+                {!showAllAcademicProjects && academic_projects.length > 3 && (
+                    <button className='show-all-button' onClick={() => setShowAllAcademicProjects(true)}>Show All Academic Projects</button>
+                )}
+                {showAllAcademicProjects && (
+                    <button className='show-all-button' onClick={() => setShowAllAcademicProjects(false)}>Show Less Academic Projects</button>
+                )}
+            </div>
+
             <h2>Projects Completed - Personal</h2>
-                <div>
-                    {personal_projects.map((proj, index) => (
-                        <CollapsedProject key={index} title={proj.title} date={proj.date} details={proj.details} link_info={proj.link_info} link={proj.link}/>
-                    
-                    ))}
-                </div>
+            <div className='exp-container'>
+                {renderProjects(personal_projects, showAllPersonalProjects)}
+                {!showAllPersonalProjects && personal_projects.length > 3 && (
+                    <button className='show-all-button' onClick={() => setShowAllPersonalProjects(true)}>Show All Personal Projects</button>
+                )}
+                {showAllPersonalProjects && (
+                    <button className='show-all-button' onClick={() => setShowAllAcademicProjects(false)}>Show Less Personal Projects</button>
+                )}
+            </div>
+
         </div>
     )
 }

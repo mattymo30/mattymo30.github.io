@@ -8,7 +8,7 @@ const CollapsedProject = ({title, date, details, link_info, link}) => {
     return (
         <div className="project-element">
             <Popup
-                trigger={<div className="title" style={{ cursor: 'pointer' }}>{title} | Click to Expand</div>}
+                trigger={<div className="title" style={{ cursor: 'pointer' }}>{title}</div>}
                 modal
                 nested
                 contentStyle={{
@@ -32,13 +32,13 @@ const CollapsedProject = ({title, date, details, link_info, link}) => {
                             {date && <p>{date}</p>}
                             <p>{details}</p>
                             {link && (
-                                <p>
+                                
                                     <a href={link} target="_blank" rel="noopener noreferrer">
                                         <button className='link-button'>{link_info}</button>
                                     </a>
-                                </p>
+                                
                             )}
-                            <button className='close-button' onClick={close}>Close</button>
+                            <button className='close-button' onClick={close}>Close Page</button>
                         </div>
                     </CSSTransition>
                 )}
