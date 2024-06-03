@@ -5,10 +5,13 @@ import Home from './pages/home';
 import Contact from './pages/contact';
 import Projects from './pages/projects';
 import Layout from './component/layout';
+import ScrollTop from './component/ScrollTop';
 
 function App() {
   return (
+
     <Router>
+      <ScrollTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

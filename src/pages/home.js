@@ -1,5 +1,8 @@
 import React, {useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+
 
 const Home = () => {
     useEffect(() => {

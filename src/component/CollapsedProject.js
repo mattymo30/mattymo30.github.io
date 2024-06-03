@@ -1,11 +1,34 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './collapsed-project.css';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { CSSTransition } from 'react-transition-group';
 
 const CollapsedProject = ({title, date, details, link_info, link}) => {
+    
+    useEffect(() => {
+        const adjustMaxHeight = () => {
+            const projectDetails = document.querySelector('.project-details');
+            if (projectDetails) {
+                const windowHeight = window.innerHeight;
+                const projectDetailsTop = projectDetails.getBoundingClientRect().top;
+                const maxAvailableHeight = windowHeight - projectDetailsTop - 20;
+                projectDetails.style.maxHeight = maxAvailableHeight + 'px';
+            }
+        };
+
+        adjustMaxHeight();
+
+        window.addEventListener('resize', adjustMaxHeight);
+
+        return () => {
+            window.removeEventListener('resize', adjustMaxHeight); 
+        };
+    }, []);
+    
     return (
+
+
         <div className="project-element">
             <Popup
                 trigger={<div className="title" style={{ cursor: 'pointer' }}>{title}</div>}
@@ -32,11 +55,9 @@ const CollapsedProject = ({title, date, details, link_info, link}) => {
                             {date && <p>{date}</p>}
                             <p>{details}</p>
                             {link && (
-                                
                                     <a href={link} target="_blank" rel="noopener noreferrer">
                                         <button className='link-button'>{link_info}</button>
                                     </a>
-                                
                             )}
                             <button className='close-button' onClick={close}>Close Page</button>
                         </div>
