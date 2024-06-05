@@ -12,7 +12,7 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div className='navbar-right'>
-                <NavLink exact to="/" className={({ isActive }) => (isActive ? "link-active" : "none")}>Home</NavLink>
+                <NavLink exact to="/" className={({ isActive }) => (isActive ? "link-active" : "none")}>About</NavLink>
                 <NavLink exact to="/experience" className={({ isActive }) => (isActive ? "link-active" : "none")}>Experience</NavLink>
                 <NavLink exact to="/contact" className={({ isActive }) => (isActive ? "link-active" : "none")}>Contact</NavLink>
             </div>

@@ -28,6 +28,7 @@
   position: relative;
   transition: 0.5s;
   font-weight: 500;
+  padding: 0px 30px;
 }
 
 .title:after {
@@ -58,8 +59,8 @@
 
 
 .link-button {
-  background: lightblue;
-  color: black;
+  background-color: #324680 !important;
+  color: #fff !important;
   border-radius: 10px;
   transition-duration: 0.3s;
   text-align: center;
@@ -79,8 +80,8 @@
 }
 
 .close-button {
-  background: lightblue;
-  color: black;
+  background-color: #324680 !important;
+  color: #fff !important;
   border-radius: 10px;
   font-size: large;
   padding: 10px 15px;
@@ -92,4 +93,31 @@
 
 .close-button:hover {
   background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+  .title {
+    padding: 0px 30px;
+    transition: all 0.3s;
+    overflow: visible;
+    transform-origin: center;
+  }
+
+  .title:after {
+    opacity: 0;  
+    right: -100px;
+  }
+  
+  .title:hover {
+    padding-right: 20px;
+    padding-left: 20px;
+    transform: scale(1.05);
+    overflow: visible;
+  }
+
+  .title:hover:after {
+    opacity: 0;
+    right: -100px;
+    top: 50%;
+  }
 }

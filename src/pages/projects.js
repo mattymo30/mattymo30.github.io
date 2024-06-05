@@ -144,10 +144,10 @@ const Projects = () => {
             <div className='exp-container'>
                 {renderProjects(work_experience, showAllWorkExperience)}
                 {!showAllWorkExperience && work_experience.length > 3 && (
-                    <button className='show-all-button' onClick={() => setShowAllWorkExperience(true)}>Show All Work Experience</button>
+                    <button className='show-all-button' onClick={() => setShowAllWorkExperience(true)}>Show All Experience</button>
                 )}
                 {showAllWorkExperience && (
-                    <button className='show-all-button' onClick={() => setShowAllWorkExperience(false)}>Show Less Work Experience</button>
+                    <button className='show-less-button' onClick={() => setShowAllWorkExperience(false)}>Show Less Experience</button>
                 )}
             </div>
 
@@ -155,10 +155,10 @@ const Projects = () => {
             <div className='exp-container'>
                 {renderProjects(curr_projects, showAllCurrProjects)}
                 {!showAllCurrProjects && curr_projects.length > 3 && (
-                    <button className='show-all-button' onClick={() => setShowAllCurrProjects(true)}>Show All Current Projects</button>
+                    <button className='show-all-button' onClick={() => setShowAllCurrProjects(true)}>Show All Projects</button>
                 )}
                 {showAllCurrProjects && (
-                    <button className='show-all-button' onClick={() => setShowAllCurrProjects(false)}>Show Less Current Projects</button>
+                    <button className='show-less-button' onClick={() => setShowAllCurrProjects(false)}>Show Less Projects</button>
                 )}
             </div>
             
@@ -166,10 +166,10 @@ const Projects = () => {
             <div className='exp-container'> 
                 {renderProjects(professional_projects, showAllProfessionalProjects)}
                 {!showAllProfessionalProjects && professional_projects.length > 3 && (
-                    <button className='show-all-button' onClick={() => setShowAllProfessionalProjects(true)}>Show All Professional Projects</button>
+                    <button className='show-all-button' onClick={() => setShowAllProfessionalProjects(true)}>Show All Projects</button>
                 )}
                 {showAllProfessionalProjects && (
-                    <button className='show-all-button' onClick={() => setShowAllProfessionalProjects(false)}>Show Less Professional Projects</button>
+                    <button className='show-less-button' onClick={() => setShowAllProfessionalProjects(false)}>Show Less Projects</button>
                 )}
             </div>
 
@@ -177,10 +177,10 @@ const Projects = () => {
             <div className='exp-container'>
                 {renderProjects(academic_projects, showAllAcademicProjects)}
                 {!showAllAcademicProjects && academic_projects.length > 3 && (
-                    <button className='show-all-button' onClick={() => setShowAllAcademicProjects(true)}>Show All Academic Projects</button>
+                    <button className='show-all-button' onClick={() => setShowAllAcademicProjects(true)}>Show All Projects</button>
                 )}
                 {showAllAcademicProjects && (
-                    <button className='show-all-button' onClick={() => setShowAllAcademicProjects(false)}>Show Less Academic Projects</button>
+                    <button className='show-less-button' onClick={() => setShowAllAcademicProjects(false)}>Show Less Projects</button>
                 )}
             </div>
 
@@ -188,10 +188,10 @@ const Projects = () => {
             <div className='exp-container'>
                 {renderProjects(personal_projects, showAllPersonalProjects)}
                 {!showAllPersonalProjects && personal_projects.length > 3 && (
-                    <button className='show-all-button' onClick={() => setShowAllPersonalProjects(true)}>Show All Personal Projects</button>
+                    <button className='show-all-button' onClick={() => setShowAllPersonalProjects(true)}>Show All Projects</button>
                 )}
                 {showAllPersonalProjects && (
-                    <button className='show-all-button' onClick={() => setShowAllAcademicProjects(false)}>Show Less Personal Projects</button>
+                    <button className='show-less-button' onClick={() => setShowAllAcademicProjects(false)}>Show Less Projects</button>
                 )}
             </div>
 

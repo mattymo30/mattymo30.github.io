@@ -5,6 +5,11 @@
     padding: 10px;
 }
 
+.contact-form {
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
 
 .title {
     text-align: center;
@@ -18,7 +23,7 @@
     }
 
     .contact-form {
-        width: 90%;
+        width: 75%;
         margin-bottom: 20px;
     }
 }

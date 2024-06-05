@@ -51,7 +51,7 @@ const CollapsedProject = ({title, date, details, link_info, link}) => {
                     classNames="popup-transition"
                     >
                         <div className="project-details">
-                            <p className='p-title'>{title}</p>
+                            <p className='p-title'><span>{title}</span></p>
                             {date && <p>{date}</p>}
                             <p>{details}</p>
                             {link && (

@@ -12,6 +12,7 @@ const Contact = () => {
             <h1 className="title">
                 Contact Me
             </h1>
+            <p>Work in Progress! Stay tuned...</p>
             <div className='contact-div'>
                 <div className='contact-form'>
                     <ContactForm/>
