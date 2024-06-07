@@ -35,12 +35,12 @@ const Home = () => {
                         <h2>CS Student at RIT '26</h2>
                         <div className='social-links'>
                             <div className="social-link">
-                                <a href="https://www.linkedin.com/in/matthewsmorrison30/">
+                                <a href="https://www.linkedin.com/in/matthewsmorrison30/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedin style={{fontSize: '100px'}}/>
                                 </a>
                             </div>
                             <div className='social-link'>
-                                <a href="https://github.com/mattymo30">
+                                <a href="https://github.com/mattymo30" target="_blank" rel="noopener noreferrer">
                                     <FaGithubSquare style={{fontSize: '100px'}}/>
                                 </a>
                             </div>
@@ -51,7 +51,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="resume-link">
-                        <a href={`${process.env.PUBLIC_URL}/docs/Morrison_Matthew_Resume_CS_6.0.pdf`}>
+                        <a href={`${process.env.PUBLIC_URL}/docs/Morrison_Matthew_Resume_CS_6.0.pdf`} target="_blank" rel="noopener noreferrer">
                             <button className="resume-button">View My Resume</button>
                         </a>
                         </div>
@@ -76,8 +76,8 @@ const Home = () => {
                     <h3>Programming Experience</h3>
                     <p>
                         I am an avid programmer who is interested in growing my knowledge and skills within programming.
-                        I have experience in Python, Java, C, C++, Angular, and HTML/CSS.
-                        I am currently learning React!
+                        I have experience in Python, Java, C, C++, Angular.js, and HTML/CSS.
+                        I am currently learning React.js through creating this site!
                     </p>
                     </div>
 

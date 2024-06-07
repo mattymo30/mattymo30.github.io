@@ -4,7 +4,7 @@
     margin-bottom: 1rem;
     display: inline-block;
     position: relative;
-    overflow: hidden;
+    overflow: none;
     transition: all 1s ease-in-out, opacity 1s ease-out;
     max-height: 50px;
     font-size: large;
@@ -17,7 +17,10 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  overflow-y: auto;
+  overflow: auto;
+  max-height: 100%;
+  box-sizing: border-box;
+
 }
 
 .title {
@@ -53,7 +56,7 @@
   right: 10px;
 }
 
-.p-title {
+.popup-title {
   font-weight: bolder;
 }
 

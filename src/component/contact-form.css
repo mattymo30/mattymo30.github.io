@@ -8,7 +8,14 @@
     text-align: center;
 }
 
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form-group {
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -22,6 +29,28 @@
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 50%;
+    background: transparent;
+    border-radius: 6px;
+    color: black;
+    border: 2px solid #324680;
+    transition-duration: 0.5s;
+    padding: 15px 0px;
+    font-size: 18px;
+  }
+
+.btn-submit:hover {
+    background-color: #324680;
+    color: #ddd;
+}
+
+@media (max-width: 480px) {
+    .btn-submit {
+        font-size: 14px;
+    }
 }
 
 .form-group textarea {

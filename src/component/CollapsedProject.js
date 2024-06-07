@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './collapsed-project.css';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { CSSTransition } from 'react-transition-group';
 
-const CollapsedProject = ({title, date, details, link_info, link}) => {
+const CollapsedProject = ({ title, date, details, link_info, link }) => {
     
     useEffect(() => {
         const adjustMaxHeight = () => {
@@ -27,8 +27,6 @@ const CollapsedProject = ({title, date, details, link_info, link}) => {
     }, []);
     
     return (
-
-
         <div className="project-element">
             <Popup
                 trigger={<div className="title" style={{ cursor: 'pointer' }}>{title}</div>}
@@ -38,6 +36,8 @@ const CollapsedProject = ({title, date, details, link_info, link}) => {
                     border: 'none',
                     borderRadius: '25px',
                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                    maxWidth: '80%',
+                    width: 'auto'
                 }}
                 overlayStyle={{
                     backgroundColor: 'rgba(0, 0, 0, 0.5)'
@@ -45,19 +45,19 @@ const CollapsedProject = ({title, date, details, link_info, link}) => {
             >   
                 {close => (
                     <CSSTransition
-                    in={true}
-                    appear={true}
-                    timeout={2500}
-                    classNames="popup-transition"
+                        in={true}
+                        appear={true}
+                        timeout={2500}
+                        classNames="popup-transition"
                     >
                         <div className="project-details">
-                            <p className='p-title'><span>{title}</span></p>
+                            <div className="popup-title">{title}</div>
                             {date && <p>{date}</p>}
                             <p>{details}</p>
                             {link && (
-                                    <a href={link} target="_blank" rel="noopener noreferrer">
-                                        <button className='link-button'>{link_info}</button>
-                                    </a>
+                                <a href={link} target="_blank" rel="noopener noreferrer">
+                                    <button className='link-button'>{link_info}</button>
+                                </a>
                             )}
                             <button className='close-button' onClick={close}>Close Page</button>
                         </div>

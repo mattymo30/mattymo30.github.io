@@ -6,9 +6,17 @@ h2 {
     text-decoration: underline;
 }
 
+hr {
+    color:#324680;
+    width: 80%;
+    margin-top: 30px;
+    border: 5px solid #324680
+ }
+
 .explanation {
     font-size: large;
     max-width: 800px;
+    width:75%;
     margin: 0 auto;
     text-align: center;
 }

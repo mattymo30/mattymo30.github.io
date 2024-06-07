@@ -134,12 +134,13 @@ const Projects = () => {
 
     return (
         <div>
+            <hr/>
             <h1>Personal And Professional Experience</h1>
 
             <div className='explanation'>
                 <p>This is a collection of all my work experience and project I've worked on, ranging from professional, academic, and personal projects. Click on each experience to learn more about it!</p>
             </div>
-
+            <hr></hr>
             <h2>Work Experience</h2>
             <div className='exp-container'>
                 {renderProjects(work_experience, showAllWorkExperience)}
